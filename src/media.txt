@@ -1,0 +1,101 @@
+
+
+create a web appliaction using react js with below statements
+
+1. user can create and delete, edit
+
+2. the crad must contain name and  a vedio/ mp3 link
+
+3. the user have flexiblty to create  bucket to categories and card acccording to his/ her choice
+
+4.user can move a card to different bucket
+
+5. on clicking on the card a modal with an iframe should open with start playing video
+
+6. user can crate and delete a card ,card or card can multiple card under a single bucket at once
+
+7. there should be a seperate tab called history which list the mp3/mp4 links that you have played 
+
+ie the card name the link and the item was played
+
+tech stack
+--------------
+
+1.front-end  : react.js
+2.Back-end   :  create and use json server
+
+
+
+a hook named  useNavigate()
+to redirect to one page to another page we can use
+
+
+
+
+AXIOS fEATURES:Promise based HTTP client for the browser and node.js
+------------
+1.Make XMLHttpRequests from the browser
+2.Make http requests from node.js
+3.Supports the Promise API
+4.Intercept request and response
+5Transform request and response data
+Cancel requests
+Automatic transforms for JSON data
+🆕 Automatic data object serialization to multipart/form-data and x-www-form-urlencoded body encodings
+Client side support for protecting against XSRF
+
+
+
+commons steps in API CALL
+--------------------------
+
+ // `url` is the server URL that will be used for the request
+  url: '/user',
+
+    // `method` is the request method to be used when making the request
+  method: 'get', // default
+
+   // `headers` are custom headers to be sent
+  headers: {'X-Requested-With': 'XMLHttpRequest'},
+
+
+  // `data` is the data to be sent as the request body
+  // Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
+  // When no `transformRequest` is set, must be of one of the following types:
+  // - string, plain object, ArrayBuffer, ArrayBufferView, URLSearchParams
+  // - Browser only: FormData, File, Blob
+  // - Node only: Stream, Buffer, FormData (form-data package)
+  data: {
+    firstName: 'Fred'
+  },
+
+
+
+
+
+
+watch history-----------
+-----------------------
+
+
+1.create a watch history tab in home page
+2. create a new component for watch history(data is stored as table format (id,cardname, url, date))
+
+3.create a watch history key in db.json and value as array 
+   when we click on the card add data to db.json get watch history from db.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+state lifting: is a data sharing method between siblings   data from the child(add) is first shered to (home)parent using state it is passed to another child(view) or sibling of add (view)
